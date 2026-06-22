@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa58646b5c64401499ac916ef25a1cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  force: 20
+  forceMode: 0
 --- !u!1 &6008361931018459755
 GameObject:
   m_ObjectHideFlags: 0
