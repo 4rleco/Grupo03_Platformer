@@ -26,11 +26,13 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rigidbody.AddForce(movement * force, forceMode);   
+        rigidbody.AddForce(movement * force, forceMode);
     }
 
     private void Movement()
     {
+        movement = Vector2.zero;
+
         movement.x = Input.GetAxis("Horizontal");
 
         if (Input.GetKey(KeyCode.Space))
