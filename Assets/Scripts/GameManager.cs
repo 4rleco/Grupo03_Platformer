@@ -19,12 +19,12 @@ public class GameManager : MonoBehaviour
     private void OnWinGame(bool obj)
     {
         Time.timeScale = 0;
-        winGamePanel.SetActive(obj);
+        winGamePanel.SetActive(true);
     }
 
     private void OnGameOver(bool obj)
     {
        Time.timeScale = 0;
-        gameOverPanel.SetActive(obj);
+        gameOverPanel.SetActive(true);
     }
 }
