@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int lifes = 3;
     [SerializeField] private ForceMode2D forceMode;
     [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private AudioSource jump;
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
@@ -70,6 +71,10 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
 
         if (Input.GetKey(KeyCode.Space))
+        {
             movement.y++;
+
+            jump.Play();
+        }
     }
 }
