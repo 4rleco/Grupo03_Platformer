@@ -23,11 +23,13 @@ public class Settings : MonoBehaviour
     {
         AudioManager.instance.SaveVolumes(master.value,music.value,sfx.value);
         SceneManager.UnloadSceneAsync(2);
-        Time.timeScale = 1f;
     }
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            goToLast();
+        }
     }
 }
