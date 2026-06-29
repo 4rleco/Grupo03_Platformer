@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject spawnPoint;
     [SerializeField] private bool canJump;
     [SerializeField] private float jumpForce;
+    [SerializeField] private AudioSource jump;
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
@@ -99,6 +100,8 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("SpeedY", 1);
             rigidbody.AddForce(new Vector2(0f, jumpForce));
             canJump = false;
+
+            jump.Play();
         }
     }
 }
