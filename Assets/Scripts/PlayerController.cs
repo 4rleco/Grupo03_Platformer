@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
 
     public event Action<bool> OnGameOver;
+    public event Action<bool> OnWinGame;
 
     private void Awake()
     {
@@ -69,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag("EndPoint"))
-            OnGameOver?.Invoke(true);
+            OnWinGame?.Invoke(true);
     }
 
     private void Movement()
