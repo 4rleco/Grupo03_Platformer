@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameOverPanel.SetActive(false);
+        winGamePanel.SetActive(false);
+
         player.OnGameOver += OnGameOver;
         player.OnWinGame += OnWinGame;
     }
