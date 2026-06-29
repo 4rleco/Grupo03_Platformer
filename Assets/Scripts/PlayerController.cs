@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool canJump;
     [SerializeField] private float jumpForce;
     [SerializeField] private AudioSource jump;
+    [SerializeField] private TextMeshProUGUI LivesText;
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
@@ -39,6 +41,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        LivesText.text = "Lives: " + lifes;
+
         if (lifes <= 0)
             OnGameOver?.Invoke(true);
 
