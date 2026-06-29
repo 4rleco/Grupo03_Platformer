@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 230403212}
   - component: {fileID: 230403211}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19870,6 +19870,10 @@ PrefabInstance:
       propertyPath: force
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 324311653412641730, guid: 1dc6da5452fb5be4fb6c689756fe9717, type: 3}
+      propertyPath: LivesText
+      value: 
+      objectReference: {fileID: 230403211}
     - target: {fileID: 324311653412641730, guid: 1dc6da5452fb5be4fb6c689756fe9717, type: 3}
       propertyPath: jumpForce
       value: 500
