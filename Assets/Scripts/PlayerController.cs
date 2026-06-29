@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        maxPosY = Camera.main.orthographicSize;
         minPosY = -Camera.main.orthographicSize;
 
         transform.position = spawnPoint.transform.position;
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
         Movement();
 
-        if (transform.position.y < minPosY || transform.position.y > maxPosY)
+        if (transform.position.y < minPosY)
         {
             lifes--;
             transform.position = spawnPoint.transform.position;
