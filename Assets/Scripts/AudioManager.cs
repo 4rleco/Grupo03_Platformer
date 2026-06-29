@@ -2,8 +2,9 @@ using UnityEngine;
 
 public enum SoundType
 {
-    Collision,
-    Perfect
+    Jump,
+    Death,
+    Win
 }
 
 public enum MusicType

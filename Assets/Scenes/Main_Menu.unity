@@ -697,8 +697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def738d79d764454e90e8b753cdd9007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  SoundList: []
-  GameMusic: {fileID: 0}
+  SoundList:
+  - {fileID: 8300000, guid: 0efe1a33102b5c3428dcb1cbc2d46abb, type: 3}
+  - {fileID: 8300000, guid: 00e844519afd05a4d8625d2efe9bd901, type: 3}
+  - {fileID: 8300000, guid: 27d24e7e84386ef49a3885bdfcf2ee6b, type: 3}
+  GameMusic: {fileID: 8300000, guid: 83fdc63f675df7c4e878bc38875b4402, type: 3}
   audioSource: {fileID: 0}
 --- !u!82 &1006436808
 AudioSource:
