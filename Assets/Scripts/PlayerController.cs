@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        transform.position = spawnPoint.transform.position;
+
         rigidbody = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
