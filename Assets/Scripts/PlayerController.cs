@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
 
-    private float maxPosY = 8;
-    private float minPosY = -8;
+    private float maxPosY;
+    private float minPosY;
 
     private Vector2 movement;
 
@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        maxPosY = Camera.main.orthographicSize;
+        minPosY = -Camera.main.orthographicSize;
+
         transform.position = spawnPoint.transform.position;
 
         rigidbody = GetComponent<Rigidbody2D>();
@@ -38,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < minPosY || transform.position.y > maxPosY)
         {
+            lifes--;
             transform.position = spawnPoint.transform.position;
         }
     }
