@@ -20435,6 +20435,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 324311653412641730, guid: 1dc6da5452fb5be4fb6c689756fe9717, type: 3}
+      propertyPath: jumpForce
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 324311653412641730, guid: 1dc6da5452fb5be4fb6c689756fe9717, type: 3}
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 370807360}
